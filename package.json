@@ -3,14 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "babel-register": "^6.26.0",
+    "koa": "^2.3.0",
+    "koa-route": "^3.2.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-scripts": "1.0.12"
+    "react-scripts": "1.0.12",
+    "socket.io": "^2.0.3"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node ./server | react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "server": "nodemon ./server"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.6.0"
   }
 }
